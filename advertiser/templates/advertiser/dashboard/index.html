@@ -274,13 +274,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</a>
 								<ul class="dropdown-menu drp-mnu">
 									<li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li> 
-									<li> <a href="#"><i class="fa fa-user"></i>Profile</a> </li> 
-									<li> <a href="sign-up.html"><i class="fa fa-sign-out"></i> Logout</a> </li>
+									<li> <a href="#"><i class="fa fa-user"></i>Profile</a> </li>
+
+                                    <form id="logout">
+                                        <li> <a onclick="logout();" href="{% url 'advertiser:login' %}" ><i class="fa fa-sign-out"></i> Logout</a> </form>
 								</ul>
 							</li>
 							<div class="clearfix"> </div>
 						</ul>
-					</div>		
+					</div>
+                    <script type="text/javascript">
+   function logout(){
+   document.getElementById("logout").submit();
+}</script>
 					<div class="social_icons">
 						<div class="col-md-4 social_icons-left">
 							<a href="#" class="yui"><i class="fa fa-facebook i1"></i><span>300<sup>+</sup> Likes</span></a>

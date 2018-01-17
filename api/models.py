@@ -2,12 +2,12 @@ from django.db import models
 
 
 class User(models.Model):
-    username = models.CharField(max_length=45)
-    gender = models.CharField(max_length=1)
-    register_date = models.CharField(max_length=20)
-    current_ip = models.CharField(max_length=45)
-    register_ip = models.CharField(max_length=45)
-    setting = models.ForeignKey('Setting', models.DO_NOTHING)
+    username = models.CharField(null=False,max_length=45)
+    gender = models.CharField(null=False,max_length=1)
+    register_date = models.CharField(blank=True,null=True,max_length=20)
+    current_ip = models.CharField(blank=True,null=True,max_length=45)
+    register_ip = models.CharField(blank=True,null=True,max_length=45)
+    setting = models.ForeignKey('Setting', models.DO_NOTHING, blank=True, null=True)
     password = models.CharField(max_length=45)
 
     def __str__(self):
@@ -15,9 +15,9 @@ class User(models.Model):
 
 
 class Setting(models.Model):
-    email = models.CharField(null=False, max_length=45)
-    phone = models.CharField(null=False, max_length=25)
-    language = models.CharField(null=False, max_length=45)
+    email = models.CharField(null=True, max_length=45)
+    phone = models.CharField(null=True, max_length=25)
+    language = models.CharField(default='English', max_length=45)
     themes = models.ForeignKey('Themes', models.DO_NOTHING)
 
 

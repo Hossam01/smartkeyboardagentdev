@@ -5,6 +5,8 @@ from django.conf.urls.static import static
 from advertiser import views
 from advertiser.views import RegistrationFormView,AddAdvertisementView,AdvertisersListView,LoginFormView
 
+app_name = 'advertiser'
+
 urlpatterns = [
     url(r'^$', views.index, name='home'),
     url(r'registration/$',RegistrationFormView.as_view(), name='registration'),

@@ -14,6 +14,7 @@ class UserViewSet(ModelViewSet):
     queryset = User.objects.all()
 
 
+
 class ThemeViewSet(ModelViewSet):
     serializer_class = ThemeSerializer
     queryset = Themes.objects.all()

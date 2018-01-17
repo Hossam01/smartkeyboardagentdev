@@ -8,6 +8,19 @@ class UserSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+
+    def create(self, validated_data):
+        sett = Setting.objects.create(themes_id=1)
+        sett.save()
+        username= validated_data['username']
+        gender = validated_data['gender']
+        password = validated_data['password']
+        regIp = validated_data['register_ip']
+        currentIp = validated_data['current_ip']
+        reg_date = validated_data['register_date']
+        return User.objects.create(setting_id=sett.id,**validated_data)
+
+
 class SettingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Setting

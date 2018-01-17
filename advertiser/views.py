@@ -7,12 +7,27 @@ from api.models import Advertisement
 from django.contrib import messages
 
 
+
+class IndexView(View):
+    template_name = 'advertiser/dashboard/index.html'
+
+    def get(self,request):
+        pass
+    def post(self,request):
+        pass
+    def logout(self,request):
+        del request.session['username']
+        return render(request, 'advertiser/login.html')
+
+
 def index(request):
     return render(request, 'advertiser/dashboard/index.html',{'username':'Moamen'})
 
 
 def logout(request):
-    pass
+    del request.session['username']
+    return render(request, 'advertiser/login.html')
+
 
 
 class LoginFormView(View):

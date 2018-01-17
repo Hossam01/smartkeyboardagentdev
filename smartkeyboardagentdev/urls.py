@@ -21,6 +21,6 @@ from django.conf.urls import include
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', index),
-    url(r'^advertiser/',include('advertiser.urls')),
+    url(r'^advertiser/',include('advertiser.urls',namespace='advertiser')),
     url(r'^api/', include('api.urls')),
 ]
