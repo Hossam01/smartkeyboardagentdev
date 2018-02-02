@@ -4403,6 +4403,8 @@ button.rew:hover {
 h1.blank,h3.blank1 {
 	font-size:2em;
 	color:#999;
+	padding-top: 30px;
+	padding-left: 40px;
 	margin:0 0 1em;
 }
 /*-- //blank_page --*/
@@ -7381,6 +7383,11 @@ p.creating {
     font-size: 18px;
 }
 .sign-up2 input[type="text"],.sign-up2 input[type="password"] {
+    font-size: 13px;
+    padding: 8px 10px;
+    margin: 0.5em 0;
+}
+.sign-up2 input[type="email"],.sign-up2 input[type="email"] {
     font-size: 13px;
     padding: 8px 10px;
     margin: 0.5em 0;

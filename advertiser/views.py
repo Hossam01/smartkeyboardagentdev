@@ -12,7 +12,7 @@ class IndexView(View):
     template_name = 'advertiser/dashboard/index.html'
 
     def get(self,request):
-        pass
+        return render (request, 'advertiser/dashboard/index.html')
     def post(self,request):
         pass
     def logout(self,request):
@@ -20,14 +20,41 @@ class IndexView(View):
         return render(request, 'advertiser/login.html')
 
 
+class ContactView(View):
+    template_name = 'advertiser/website/contact.html'
+    def get(self,request):
+        return render(request, 'advertiser/website/contact.html')
+
 def index(request):
-    return render(request, 'advertiser/dashboard/index.html',{'username':'Moamen'})
+    return render(request, 'advertiser/website/index.html',{'username':'Moamen'})
+
+class FormsView(View):
+    template_name = 'advertiser/dashboard/forms.html'
+
+    def get(self,request):
+        return render(request, 'advertiser/dashboard/forms.html')
+    def post(self,request):
+        pass
+class ChartsView(View):
+    template_name = 'advertiser/dashboard/charts.html'
+
+    def get(self,request):
+        return render(request, 'advertiser/dashboard/charts.html')
+    def post(self,request):
+        pass
 
 
 def logout(request):
     del request.session['username']
     return render(request, 'advertiser/login.html')
 
+
+class HomeView(View):
+    template_name = 'advertiser/website/index.html'
+    def get(self,request):
+        return render(request, 'advertiser/website/index.html')
+    def post(self,request):
+        pass
 
 
 class LoginFormView(View):

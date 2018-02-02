@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿{% load static %}
+<!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -12,10 +13,10 @@
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
 </script>
 
-<link rel="stylesheet" href="css/bootstrap.css"> 
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> 
-<link href="css/font-awesome.css" rel="stylesheet"> 
-<link href="css/nav.css" rel="stylesheet" type="text/css" media="all"/> 
+<link rel="stylesheet" href="{% static 'advertiser/website/css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'advertiser/website/css/style.css' %}" type="text/css" media="all" />
+<link href="{% static 'advertiser/website/css/font-awesome.css' %}" rel="stylesheet">
+<link href="{% static 'advertiser/website/css/nav.css' %}" rel="stylesheet" type="text/css" media="all"/>
 
 
 
@@ -25,7 +26,7 @@
 
 	<!-- Header -->
 		<div class="logo-waalayouts">
-			<h1><a href="index.html"><span>Advertisement</span><span></span></a></h1>
+			<h1><a href="{% url 'advertiser:home' %}"><span>Advertisement</span><span></span></a></h1>
 		</div>
 		
 		<!-- Navigation -->
@@ -37,9 +38,9 @@
 			</button>
 			<nav class="nav-container hidden hideNav">
 				<ul class="nav-list">
-					<li class="list-item"><a href="web/sign-in.html"><i class="fa fa-user"></i></a></li>
-					 <li class="list-item"><a href="web/index.html"><i class="fa fa-server"></i></a></li>
-					<li class="list-item"><a href="contact.html"><i class="fa fa-phone"></i></a></li>
+					<li class="list-item"><a href="{% url 'advertiser:login' %}"><i class="fa fa-user"></i></a></li>
+					 <li class="list-item"><a href="{% url 'advertiser:forms' %}"><i class="fa fa-server"></i></a></li>
+					<li class="list-item"><a href="{% url 'advertiser:contact' %}"><i class="fa fa-phone"></i></a></li>
 				
 				</ul>
 			</nav>
@@ -53,7 +54,7 @@
 								<ul class="rslides" id="slider3">
 									<li>
 										<div class="slider-img">
-											<img src="images/h1.jpg" class="img-responsive" alt="impetus">
+											<img src="{% static 'advertiser/website/images/h1.jpg' %}" class="img-responsive" alt="impetus">
 										</div>
 										<div class="slider_banner_info">
 											 <h4>Advertisement</h4>
@@ -63,7 +64,7 @@
 									</li>
 									<li>
 										<div class="slider-img">
-											<img src="images/h2.jpg" class="img-responsive" alt="impetus">
+											<img src="{% static 'advertiser/website/images/h2.jpg' %}" class="img-responsive" alt="impetus">
 										</div>
 										<div class="slider_banner_info">
 											<h4>Analysis</h4>
@@ -136,7 +137,7 @@
 								</ul>
 						</div>
 					<div class="footer-top">
-						<p>© 2018 Analysis Data. All Data Securely  </p>
+						<p>© 2018 </p>
 					</div>
 				</div>
 			</div>
@@ -146,11 +147,11 @@
 	
 <!-- Custom-JavaScript-Files -->
 
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> <!-- Default-JavaScript-File -->
-	<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+	<script type="text/javascript" src="{% static 'advertiser/website/js/jquery-2.1.4.min.js' %}"></script> <!-- Default-JavaScript-File -->
+	<script type="text/javascript" src="{% static 'advertiser/website/js/bootstrap.js' %}"></script> <!-- Necessary-JavaScript-File-For-Bootstrap -->
 
 	<!-- Navigation-JavaScript -->
-	<script type="text/javascript" src="js/jquery-func.js"></script>
+	<script type="text/javascript" src="{% static 'advertiser/website/js/jquery-func.js' %}"></script>
 	<script>
 		$(window).load(function() {
 			$(".btn-nav").on("click tap", function() {
@@ -162,7 +163,7 @@
 	<!-- //Navigation-JavaScript -->
 
 	
-						<script src="js/responsiveslides.min.js"></script>
+						<script src="{% static 'advertiser/website/js/responsiveslides.min.js' %}"></script>
 							<script>
 								// You can also use "$(window).load(function() {"
 								$(function () {
@@ -188,8 +189,8 @@
 							
 				<!-- required-js-files-->
 						<!-- for-testimonials -->
-							<link href="css/owl.carousel.css" rel="stylesheet">
-							    <script src="js/owl.carousel.js"></script>
+							<link href="{% static 'advertiser/website/css/owl.carousel.css' %}" rel="stylesheet">
+							    <script src="{% static 'advertiser/website/js/owl.carousel.js' %}"></script>
 							        <script>
 							    $(document).ready(function() {
 							      $("#owl-demo").owlCarousel({

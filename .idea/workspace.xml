@@ -2,161 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="742e6ad2-1084-4d49-9ac7-98cae4cec04c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/bootstrap-theme.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/bootstrap-theme.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/bootstrap-theme.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/bootstrap-theme.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/bootstrap.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/bootstrap.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/font-awesome.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/font-awesome.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/lightbox.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/nav.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/owl.carousel.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/HELP-US-OUT.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/css/font-awesome.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/css/font-awesome.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/fonts/FontAwesome.otf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/less/animated.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/less/bordered-pulled.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/less/core.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/less/fixed-width.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/less/font-awesome.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/less/icons.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/less/larger.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/less/list.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/less/mixins.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/less/path.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/less/rotated-flipped.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/less/screen-reader.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/less/stacked.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/less/variables.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/scss/_animated.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/scss/_bordered-pulled.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/scss/_core.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/scss/_fixed-width.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/scss/_icons.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/scss/_larger.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/scss/_list.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/scss/_mixins.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/scss/_path.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/scss/_rotated-flipped.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/scss/_screen-reader.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/scss/_stacked.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/scss/_variables.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/font-awesome-4.7.0/scss/font-awesome.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/fonts/FontAwesome.otf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/fonts/fontawesome-webfont.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/fonts/fontawesome-webfont.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/fonts/fontawesome-webfont.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/fonts/fontawesome-webfont.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/fonts/fontawesome-webfont.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/fonts/glyphicons-halflings-regular.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/fonts/glyphicons-halflings-regular.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/fonts/glyphicons-halflings-regular.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/fonts/glyphicons-halflings-regular.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/fonts/glyphicons-halflings-regular.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/images/Thumbs.db" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/images/a6.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/images/b1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/images/b3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/images/b4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/images/c1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/images/c3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/images/close.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/images/h1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/images/h2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/images/left-quote.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/images/next.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/images/prev.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/images/right-quote.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/images/stats.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/js/bootstrap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/js/bootstrap.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/js/easyResponsiveTabs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/js/jquery-2.1.4.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/js/jquery-func.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/js/lightbox-plus-jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/js/npm.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/js/owl.carousel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/js/responsiveslides.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/templates/advertiser/dashboard/charts.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/templates/advertiser/dashboard/forms.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/templates/advertiser/website/contact.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/advertiser/templates/advertiser/website/index.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/css/animate.css" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/css/animate.css" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/css/bootstrap.min.css" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/css/font-awesome.css" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/css/font-awesome.css" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/css/graph.css" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/css/graph.css" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/css/icon-font.min.css" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/css/icon-font.min.css" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/css/style.css" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/FontAwesome.otf" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/Linearicons-Free.eot" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/Linearicons-Free.eot" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/Linearicons-Free.svg" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/Linearicons-Free.svg" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/Linearicons-Free.ttf" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/Linearicons-Free.ttf" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/Linearicons-Free.woff" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/Linearicons-Free.woff" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/Linearicons-Free.woff2" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/Linearicons-Free.woff2" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/WeatherIcons-Regular.otf" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/WeatherIcons-Regular.otf" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/digital-7-webfont.eot" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7-webfont.eot" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/digital-7-webfont.svg" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7-webfont.svg" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/digital-7-webfont.ttf" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7-webfont.ttf" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/digital-7-webfont.woff" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7-webfont.woff" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/digital-7_italic-webfont.eot" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7_italic-webfont.eot" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/digital-7_italic-webfont.svg" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7_italic-webfont.svg" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/digital-7_italic-webfont.ttf" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7_italic-webfont.ttf" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/digital-7_italic-webfont.woff" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7_italic-webfont.woff" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/digital-7_mono-webfont.eot" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7_mono-webfont.eot" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/digital-7_mono-webfont.svg" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7_mono-webfont.svg" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/digital-7_mono-webfont.ttf" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7_mono-webfont.ttf" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/digital-7_mono-webfont.woff" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7_mono-webfont.woff" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/fontawesome-webfont.eot" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/fontawesome-webfont.svg" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/fontawesome-webfont.ttf" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/fontawesome-webfont.woff" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/glyphicons-halflings-regular.eot" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/glyphicons-halflings-regular.svg" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/glyphicons-halflings-regular.ttf" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/glyphicons-halflings-regular.woff" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/glyphicons-halflings-regular.woff2" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/weathericons-regular-webfont.eot" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/weathericons-regular-webfont.eot" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/weathericons-regular-webfont.svg" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/weathericons-regular-webfont.svg" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/weathericons-regular-webfont.ttf" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/weathericons-regular-webfont.ttf" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/fonts/weathericons-regular-webfont.woff" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/weathericons-regular-webfont.woff" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/images/1.jpg" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/images/1.jpg" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/images/1.png" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/images/1.png" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/images/2.png" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/images/2.png" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/images/3.jpg" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/images/3.jpg" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/images/3.png" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/images/3.png" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/images/4.png" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/images/4.png" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/images/5.png" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/images/5.png" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/images/6.png" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/images/6.png" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/images/lock.png" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/images/lock.png" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/images/search.png" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/images/search.png" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/images/tick.png" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/images/tick.png" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/images/user.png" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/images/user.png" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/js/Chart.js" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/js/Chart.js" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/js/bootstrap.min.js" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/js/classie.js" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/js/classie.js" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/js/jquery-1.10.2.min.js" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/js/jquery-1.10.2.min.js" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/js/jquery.flexisel.js" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/js/jquery.flexisel.js" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/js/jquery.flot.min.js" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/js/jquery.flot.min.js" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/js/jquery.nicescroll.js" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/js/jquery.nicescroll.js" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/js/scripts.js" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/js/scripts.js" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/js/skycons.js" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/js/skycons.js" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/js/uisearch.js" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/js/uisearch.js" />
-      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/js/wow.min.js" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/js/wow.min.js" />
+      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/css/style.css" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7-webfont.svg" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7-webfont.svg" />
+      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7_italic-webfont.svg" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7_italic-webfont.svg" />
+      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7_mono-webfont.svg" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/dashboard/fonts/digital-7_mono-webfont.svg" />
+      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/style.css" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/style.css" />
+      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/nav.css" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/nav.css" />
+      <change beforePath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/style.css" afterPath="$PROJECT_DIR$/advertiser/static/advertiser/website/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/advertiser/templates/advertiser/dashboard/charts.html" afterPath="$PROJECT_DIR$/advertiser/templates/advertiser/dashboard/charts.html" />
+      <change beforePath="$PROJECT_DIR$/advertiser/templates/advertiser/dashboard/forms.html" afterPath="$PROJECT_DIR$/advertiser/templates/advertiser/dashboard/forms.html" />
       <change beforePath="$PROJECT_DIR$/advertiser/templates/advertiser/dashboard/index.html" afterPath="$PROJECT_DIR$/advertiser/templates/advertiser/dashboard/index.html" />
+      <change beforePath="$PROJECT_DIR$/advertiser/templates/advertiser/index.html" afterPath="$PROJECT_DIR$/advertiser/templates/advertiser/index.html" />
       <change beforePath="$PROJECT_DIR$/advertiser/templates/advertiser/login.html" afterPath="$PROJECT_DIR$/advertiser/templates/advertiser/login.html" />
       <change beforePath="$PROJECT_DIR$/advertiser/templates/advertiser/registration.html" afterPath="$PROJECT_DIR$/advertiser/templates/advertiser/registration.html" />
+      <change beforePath="$PROJECT_DIR$/advertiser/templates/advertiser/website/contact.html" afterPath="$PROJECT_DIR$/advertiser/templates/advertiser/website/contact.html" />
+      <change beforePath="$PROJECT_DIR$/advertiser/templates/advertiser/website/index.html" afterPath="$PROJECT_DIR$/advertiser/templates/advertiser/website/index.html" />
+      <change beforePath="$PROJECT_DIR$/advertiser/urls.py" afterPath="$PROJECT_DIR$/advertiser/urls.py" />
+      <change beforePath="$PROJECT_DIR$/advertiser/views.py" afterPath="$PROJECT_DIR$/advertiser/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -170,34 +33,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/smartkeyboardagentdev/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+            <state relative-caret-position="170">
+              <caret line="68" column="19" lean-forward="true" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/advertiser/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/advertiser/templates/advertiser/dashboard/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="612" column="36" lean-forward="false" selection-start-line="612" selection-start-column="36" selection-end-line="612" selection-end-column="36" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -339,13 +180,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Moamen\Desktop\Workspaces\smartkeyboardagentdev\advertiser\static\advertiser\website" />
-      <recent name="C:\Users\Moamen\Desktop\Workspaces\smartkeyboardagentdev\advertiser\templates\advertiser\website" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Moamen\Desktop\Workspaces\smartkeyboardagentdev\advertiser\static\advertiser\dashboard" />
       <recent name="C:\Users\Moamen\Desktop\Workspaces\smartkeyboardagentdev\advertiser\templates\advertiser\dashboard" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Moamen\Desktop\Workspaces\smartkeyboardagentdev\advertiser" />
+      <recent name="C:\Users\Moamen\Desktop\Workspaces\smartkeyboardagentdev\advertiser\static\advertiser\website" />
+      <recent name="C:\Users\Moamen\Desktop\Workspaces\smartkeyboardagentdev\advertiser\templates\advertiser\website" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -433,9 +275,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24432677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19364598" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -767,13 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/advertiser/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -814,15 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="149" column="62" lean-forward="true" selection-start-line="149" selection-start-column="62" selection-end-line="149" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartkeyboardagentdev/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -830,22 +656,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="683" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/advertiser/templates/advertiser/dashboard/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="146" column="53" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="684" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/advertiser/templates/advertiser/dashboard/index2.html" />
     <entry file="file://$PROJECT_DIR$/advertiser/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advertiser/templates/advertiser/website/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advertiser/templates/advertiser/dashboard/charts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="102" column="54" lean-forward="false" selection-start-line="102" selection-start-column="54" selection-end-line="102" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advertiser/templates/advertiser/dashboard/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="612" column="36" lean-forward="false" selection-start-line="612" selection-start-column="36" selection-end-line="612" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -858,29 +698,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/advertiser/templates/advertiser/website/index.html">
+    <entry file="file://$PROJECT_DIR$/advertiser/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/advertiser/templates/advertiser/dashboard/charts.html">
+    <entry file="file://$PROJECT_DIR$/smartkeyboardagentdev/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="102" column="54" lean-forward="false" selection-start-line="102" selection-start-column="54" selection-end-line="102" selection-end-column="54" />
+        <state relative-caret-position="170">
+          <caret line="68" column="19" lean-forward="true" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/advertiser/templates/advertiser/dashboard/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="612" column="36" lean-forward="false" selection-start-line="612" selection-start-column="36" selection-end-line="612" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

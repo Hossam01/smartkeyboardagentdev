@@ -1,24 +1,22 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
 <title>KeyBord Advertisement | Contact </title>
 
-<!-- meta-tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Business Trade a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //meta-tags -->
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+</script>
 
-<!-- Custom-Files -->
-<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
-<link href="css/font-awesome.css" rel="stylesheet"> <!-- Font-Awesome-Icons-CSS -->
-<link href="css/nav.css" rel="stylesheet" type="text/css" media="all"/> <!-- Navbar-CSS -->	
-<!-- //Custom-Files -->
+<link rel="stylesheet" href="{% static 'advertiser/website/css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'advertiser/website/css/style.css' %}" type="text/css" media="all" />
+<link href="{% static 'advertiser/website/css/font-awesome.css' %}" rel="stylesheet">
+<link href="{% static 'advertiser/website/css/nav.css' %}" rel="stylesheet" type="text/css" media="all"/>
 
-<!-- Web-Fonts -->
+
 	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 <!-- //Web-Fonts -->
 
@@ -27,7 +25,7 @@
 
 	<!-- Header -->
 		<div class="logo-waalayouts">
-			<h1><a href="index.html"><span>Advertisement</span><span></span></a></h1>
+			<h1><a href="{% url 'advertiser:home' %}"><span>Advertisement</span><span></span></a></h1>
 		</div>
 		
 		<!-- Navigation -->
@@ -39,9 +37,9 @@
 			</button>
 			<nav class="nav-container hidden hideNav">
 				<ul class="nav-list">
-					<li class="list-item"><a href="index.html"><i class="fa fa-home"></i></a></li>
-					<li class="list-item"><a href="web/sign-in.html"><i class="fa fa-user"></i></a></li>
-					<li class="list-item"><a href="web/index.html"><i class="fa fa-server"></i></a></li>
+					<li class="list-item"><a href="{% url 'advertiser:login' %}"><i class="fa fa-user"></i></a></li>
+					 <li class="list-item"><a href="{% url 'advertiser:dashboard' %}"><i class="fa fa-server"></i></a></li>
+					<li class="list-item"><a href="{% url 'advertiser:contact' %}"><i class="fa fa-phone"></i></a></li>
 				
 				</ul>
 			</nav>
@@ -50,7 +48,7 @@
 
 		<!-- banner-slider-about -->
 			<div class="waal_banner_info two">
-				<h3><a href="contact.html">Contact</a></h3>
+				<h3><a href="{% url 'advertiser:contact' %}">Contact</a></h3>
 			</div>
 			<div class="clearfix"></div>
 		<!-- //banner-slider-about -->
@@ -135,11 +133,11 @@
 	
 <!-- Custom-JavaScript-Files -->
 
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> <!-- Default-JavaScript-File -->
-	<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+	<script type="text/javascript" src="{% static 'advertiser/website/js/jquery-2.1.4.min.js' %}"></script> <!-- Default-JavaScript-File -->
+	<script type="text/javascript" src="{% static 'advertiser/website/js/bootstrap.js' %}"></script> <!-- Necessary-JavaScript-File-For-Bootstrap -->
 
 	<!-- Navigation-JavaScript -->
-	<script type="text/javascript" src="js/jquery-func.js"></script>
+	<script type="text/javascript" src="{% static 'advertiser/website/js/jquery-func.js' %}"></script>
 	<script>
 		$(window).load(function() {
 			$(".btn-nav").on("click tap", function() {
