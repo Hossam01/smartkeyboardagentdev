@@ -3,12 +3,12 @@ from . import views
 from django.conf import settings
 from django.conf.urls.static import static
 from advertiser import views
-from advertiser.views import RegistrationFormView,AddAdvertisementView,AdvertisersListView,LoginFormView, ContactView,FormsView,ChartsView,HomeView
+from advertiser.views import RegistrationFormView,DashboardView,AddAdvertisementView,AdvertisersListView,LoginFormView, ContactView,FormsView,ChartsView,HomeView
 
 app_name = 'advertiser'
 
 urlpatterns = [
-    url(r'dashboard/$', views.index, name='dashboard'),
+    url(r'dashboard/$', DashboardView.as_view(), name='dashboard'),
     url(r'registration/$',RegistrationFormView.as_view(), name='registration'),
     url(r'add-advertisement/$', AddAdvertisementView.as_view()),
     url(r'test/$', AdvertisersListView.as_view()),

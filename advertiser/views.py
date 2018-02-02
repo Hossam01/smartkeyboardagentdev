@@ -19,6 +19,11 @@ class IndexView(View):
         del request.session['username']
         return render(request, 'advertiser/login.html')
 
+class DashboardView(View):
+    template_name = 'advertiser/dashboard/index.html'
+
+    def get(self, request):
+        return render(request, 'advertiser/dashboard/index.html')
 
 class ContactView(View):
     template_name = 'advertiser/website/contact.html'
