@@ -1,5 +1,5 @@
-from api.models import Advertiser
 from django import forms
+
 from api.models import Advertisement
 
 
@@ -30,3 +30,12 @@ class LoginForm(forms.Form):
     username.widget=forms.TextInput(attrs={'placeholder':'Username'})
     password = forms.CharField(widget=forms.PasswordInput, required=True, label='Password')
     password.widget= forms.PasswordInput(attrs={'placeholder':'Password'})
+
+
+class Userinput(forms.Form):
+    name = forms.CharField(required=True, widget=forms.TextInput(attrs={'placeholder': 'name'}))
+    description = forms.CharField(required=True, widget=forms.TextInput(attrs={'placeholder': 'description'}))
+    pub_date = forms.CharField(required=True, widget=forms.TextInput(attrs={'placeholder': 'pub_date'}))
+    max_age = forms.IntegerField(required=True, widget=forms.TextInput(attrs={'placeholder': 'max_age'}))
+    min_age = forms.IntegerField(required=True, widget=forms.TextInput(attrs={'placeholder': 'min_age'}))
+    category = forms.CharField(required=True, widget=forms.TextInput(attrs={'placeholder': 'category'}))

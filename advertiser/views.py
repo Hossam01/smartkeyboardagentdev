@@ -1,11 +1,11 @@
+from django.contrib import messages
+from django.contrib.auth.hashers import make_password, check_password
 from django.shortcuts import render, redirect
 from django.views import generic
 from django.views.generic import View
-from django.contrib.auth.hashers import make_password, check_password
-from .forms import *
-from api.models import Advertisement
-from django.contrib import messages
 
+from api.models import TargetedAge, Category
+from .forms import *
 
 
 class IndexView(View):
@@ -82,7 +82,7 @@ class LoginFormView(View):
                 advertiser = Advertiser.objects.get(name=form.cleaned_data['username'])
                 if check_password(form.cleaned_data['password'], advertiser.password):
                     request.session['username'] = advertiser.name
-                    return redirect('home')
+                    return redirect('advertiser/dashboard')
                 else:
                     form = LoginForm(None)
                     context = {'form': form, 'msg': 'Incorrect password.'}
@@ -117,7 +117,7 @@ class RegistrationFormView(View):
                    phone = form.cleaned_data['phone']
                    Advertiser.objects.create(name=name, email=email, password=password, phone=phone, budget=50)
                    messages.success(request, "Your account has been registered successfully!")
-                   return redirect('registration')
+                   return redirect('advertiser/login')
                 else:
                     form = RegistrationForm(None)
                     messages.error(request, 'Password does not match')
@@ -152,3 +152,57 @@ class AddAdvertisementView(View):
 
     def post(self, request):
         pass
+
+
+class AdvertisementFormView(View):
+    form_class = Userinput
+    template_name = 'advertiser/forms.html'
+
+    def get(self, request):
+        form = Userinput(None)
+        context = {'form': form}
+        return render(request, 'advertiser/forms.html', context)
+
+    def post(self, request):
+        form = Userinput(request.POST)
+        if form.is_valid():
+            student = Advertisement
+            age = TargetedAge
+            category = Category
+            student.name = form.cleaned_data['name']
+            student.description = form.cleaned_data['description']
+            student.pub_date = form.cleaned_data['pub_date']
+            age.max_age = form.cleaned_data['max_age']
+            age.min_age = form.cleaned_data['min_age']
+            category.name = form.cleaned_data['category']
+            student.save()
+            age.save()
+            category.save()
+        context = {'form': form}
+        return render(request, 'advertiser/dashboard/forms.html', context)
+
+
+def Student(request):
+    category = Advertisement.objects.count()
+    sportnum = Advertisement.objects.filter(advertisement__category='Sports').count()
+    sport = persentag(sportnum, category)
+
+    technologynum = Advertisement.objects.filter(advertisement__category='Technology').count()
+    technology = persentag(technologynum, category)
+
+    shoppingnum = Advertisement.objects.filter(advertisement__category='Shopping').count()
+    shopping = persentag(shoppingnum, category)
+
+    cookingnum = Advertisement.objects.filter(advertisement__category='Cooking').count()
+    cooking = persentag(cookingnum, category)
+
+    travelnum = Advertisement.objects.filter(advertisement__category='Travel').count()
+    travel = persentag(travelnum, category)
+
+    context = {'sport': sport, 'technology': technology, 'shopping': shopping, 'cooking': cooking, 'travel': travel}
+    return render(request, 'advertiser/dashboard/charts.html', context)
+
+
+def persentag(numitem, numcategory):
+    result = (numitem * 100) / numcategory
+    return result
