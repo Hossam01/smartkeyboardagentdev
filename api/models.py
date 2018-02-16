@@ -30,6 +30,7 @@ class Themes(models.Model):
     description = models.CharField(max_length=25, null=False)
 
 
+
 class Category(models.Model):
     name = models.CharField(max_length=45, null=False)
 
@@ -73,7 +74,7 @@ class Advertisement(models.Model):
    name = models.CharField(max_length=60,null=False)
    description = models.CharField(max_length=255,null=False)
    pub_date = models.DateField(null=False)
-   target = models.ForeignKey('Target', models.DO_NOTHING, null=False)
+   target = models.ForeignKey('Target', models.DO_NOTHING, null=True)
    acceptance_id = models.IntegerField(null=True)
    rejection_id = models.IntegerField(null=True)
    advertiser = models.ForeignKey('Advertiser',models.DO_NOTHING, null=True)

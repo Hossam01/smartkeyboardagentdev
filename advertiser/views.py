@@ -4,20 +4,23 @@ from django.shortcuts import render, redirect
 from django.views import generic
 from django.views.generic import View
 
-from api.models import TargetedAge, Category
+from api.models import Advertiser
 from .forms import *
 
 
 class IndexView(View):
     template_name = 'advertiser/dashboard/index.html'
 
-    def get(self,request):
-        return render (request, 'advertiser/dashboard/index.html')
-    def post(self,request):
+    def get(self, request):
+        return render(request, 'advertiser/dashboard/index.html')
+
+    def post(self, request):
         pass
-    def logout(self,request):
+
+    def logout(self, request):
         del request.session['username']
         return render(request, 'advertiser/login.html')
+
 
 class DashboardView(View):
     template_name = 'advertiser/dashboard/index.html'
@@ -25,27 +28,36 @@ class DashboardView(View):
     def get(self, request):
         return render(request, 'advertiser/dashboard/index.html')
 
+
 class ContactView(View):
     template_name = 'advertiser/website/contact.html'
-    def get(self,request):
+
+    def get(self, request):
         return render(request, 'advertiser/website/contact.html')
 
+
 def index(request):
-    return render(request, 'advertiser/website/index.html',{'username':'Moamen'})
+    return render(request, 'advertiser/website/index.html', {'username': 'Moamen'})
+
 
 class FormsView(View):
     template_name = 'advertiser/dashboard/forms.html'
 
-    def get(self,request):
+    def get(self, request):
         return render(request, 'advertiser/dashboard/forms.html')
-    def post(self,request):
+
+    def post(self, request):
         pass
+
+
 class ChartsView(View):
     template_name = 'advertiser/dashboard/charts.html'
 
-    def get(self,request):
+    def get(self, request):
+
         return render(request, 'advertiser/dashboard/charts.html')
-    def post(self,request):
+
+    def post(self, request):
         pass
 
 
@@ -56,9 +68,11 @@ def logout(request):
 
 class HomeView(View):
     template_name = 'advertiser/website/index.html'
-    def get(self,request):
+
+    def get(self, request):
         return render(request, 'advertiser/website/index.html')
-    def post(self,request):
+
+    def post(self, request):
         pass
 
 
@@ -81,7 +95,7 @@ class LoginFormView(View):
             if Advertiser.objects.filter(name=form.cleaned_data['username']).exists():
                 advertiser = Advertiser.objects.get(name=form.cleaned_data['username'])
                 if check_password(form.cleaned_data['password'], advertiser.password):
-                    request.session['username'] = advertiser.name
+                    request.session['username'] = advertiser.pk
                     return redirect('advertiser/dashboard')
                 else:
                     form = LoginForm(None)
@@ -111,13 +125,13 @@ class RegistrationFormView(View):
 
             if not Advertiser.objects.filter(name=form.cleaned_data['username']).exists():
                 if form.cleaned_data['password'] == form.cleaned_data['confirmpassword']:
-                   name = form.cleaned_data['username']
-                   email = form.cleaned_data['email']
-                   password = make_password(form.cleaned_data['password'])
-                   phone = form.cleaned_data['phone']
-                   Advertiser.objects.create(name=name, email=email, password=password, phone=phone, budget=50)
-                   messages.success(request, "Your account has been registered successfully!")
-                   return redirect('advertiser/login')
+                    name = form.cleaned_data['username']
+                    email = form.cleaned_data['email']
+                    password = make_password(form.cleaned_data['password'])
+                    phone = form.cleaned_data['phone']
+                    Advertiser.objects.create(name=name, email=email, password=password, phone=phone, budget=50)
+                    messages.success(request, "Your account has been registered successfully!")
+                    return redirect('advertiser/login')
                 else:
                     form = RegistrationForm(None)
                     messages.error(request, 'Password does not match')
@@ -126,7 +140,7 @@ class RegistrationFormView(View):
 
             else:
                 form = RegistrationForm(None)
-                messages.error(request,'Account with the same username already exists')
+                messages.error(request, 'Account with the same username already exists')
                 return render(request, 'advertiser/registration.html',
                               {'form': form})
 
@@ -156,53 +170,37 @@ class AddAdvertisementView(View):
 
 class AdvertisementFormView(View):
     form_class = Userinput
-    template_name = 'advertiser/forms.html'
+    template_name = 'advertiser/dashboard/forms.html'
 
     def get(self, request):
         form = Userinput(None)
         context = {'form': form}
-        return render(request, 'advertiser/forms.html', context)
-
-    def post(self, request):
-        form = Userinput(request.POST)
-        if form.is_valid():
-            student = Advertisement
-            age = TargetedAge
-            category = Category
-            student.name = form.cleaned_data['name']
-            student.description = form.cleaned_data['description']
-            student.pub_date = form.cleaned_data['pub_date']
-            age.max_age = form.cleaned_data['max_age']
-            age.min_age = form.cleaned_data['min_age']
-            category.name = form.cleaned_data['category']
-            student.save()
-            age.save()
-            category.save()
-        context = {'form': form}
         return render(request, 'advertiser/dashboard/forms.html', context)
 
 
+    def post(self, request):
+        if request.POST.get('delete'):
+            Advertisement.objects.get(id=1).delete()
+        if request.POST.get('update'):
+            Advertisement.objects.filter(id=6).update(name="ahmed")
+        form = Userinput(request.POST)
+        if form.is_valid():
+            if 'username' in request.session:
+                username = request.session['username']
+                hoss = Advertiser.objects.get(id=username)
+            name = form.cleaned_data['name']
+            description = form.cleaned_data['description']
+            pub_date = form.cleaned_data['pub_date']
+            max_age = form.cleaned_data['max_age']
+            min_age = form.cleaned_data['min_age']
+            category = form.cleaned_data.get('category')
+            name_advertisement = form.cleaned_data.get['advertisement']
+            Advertisement.objects.create(name=name, description=description, pub_date=pub_date, advertiser=hoss)
+        newform = Userinput(None)
+        return render(request, 'advertiser/dashboard/forms.html', {'form': newform})
+
+
 def Student(request):
-    category = Advertisement.objects.count()
-    sportnum = Advertisement.objects.filter(advertisement__category='Sports').count()
-    sport = persentag(sportnum, category)
-
-    technologynum = Advertisement.objects.filter(advertisement__category='Technology').count()
-    technology = persentag(technologynum, category)
-
-    shoppingnum = Advertisement.objects.filter(advertisement__category='Shopping').count()
-    shopping = persentag(shoppingnum, category)
-
-    cookingnum = Advertisement.objects.filter(advertisement__category='Cooking').count()
-    cooking = persentag(cookingnum, category)
-
-    travelnum = Advertisement.objects.filter(advertisement__category='Travel').count()
-    travel = persentag(travelnum, category)
-
-    context = {'sport': sport, 'technology': technology, 'shopping': shopping, 'cooking': cooking, 'travel': travel}
+    stuents = Advertisement.objects.filter(name="Hossam").count()
+    context = {'stuents': stuents}
     return render(request, 'advertiser/dashboard/charts.html', context)
-
-
-def persentag(numitem, numcategory):
-    result = (numitem * 100) / numcategory
-    return result
