@@ -1,6 +1,9 @@
 from django import forms
+from .views import *
 
 from api.models import Advertisement
+
+
 
 
 class RegistrationForm(forms.Form):
@@ -38,10 +41,17 @@ OPTIONS = [
 
 
 class Userinput(forms.Form):
-    advertisement = forms.ModelChoiceField(Advertisement.objects.all().values_list('name', flat=True))
+
+    advertisement = forms.ChoiceField(choices=[], required=False,widget=forms.Select(attrs={'placeholder':'advertisement'}))
+
+    def __init__(self,*args, **kwargs):
+        super(Userinput,self).__init__(*args, **kwargs)
+
+        self.fields['advertisement'].choices = Advertisement.objects.all().values_list("name","name")
+
     name = forms.CharField(required=True, widget=forms.TextInput(attrs={'placeholder': 'name'}))
     description = forms.CharField(required=True, widget=forms.TextInput(attrs={'placeholder': 'description'}))
-    pub_date = forms.CharField(required=True, widget=forms.TextInput(attrs={'placeholder': 'pub_date'}))
+    pub_date = forms.DateField(input_formats=['%m-%d-%Y'],required=True, widget=forms.TextInput(attrs={'placeholder': 'pub_date'}))
     max_age = forms.IntegerField(required=True, widget=forms.TextInput(attrs={'placeholder': 'max_age'}))
     min_age = forms.IntegerField(required=True, widget=forms.TextInput(attrs={'placeholder': 'min_age'}))
     # category = forms.CharField(label='What is your favorite fruit?', widget=forms.Select(choices=FRUIT_CHOICES))
@@ -51,5 +61,5 @@ class Userinput(forms.Form):
         initial='0',
         widget=forms.SelectMultiple(),
         required=True,
-        label='Office',
+        label='Office'
     )

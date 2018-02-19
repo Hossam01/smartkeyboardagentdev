@@ -179,10 +179,7 @@ class AdvertisementFormView(View):
 
 
     def post(self, request):
-        if request.POST.get('delete'):
-            Advertisement.objects.get(id=1).delete()
-        if request.POST.get('update'):
-            Advertisement.objects.filter(id=6).update(name="ahmed")
+
         form = Userinput(request.POST)
         if form.is_valid():
             if 'username' in request.session:
@@ -194,8 +191,12 @@ class AdvertisementFormView(View):
             max_age = form.cleaned_data['max_age']
             min_age = form.cleaned_data['min_age']
             category = form.cleaned_data.get('category')
-            name_advertisement = form.cleaned_data.get['advertisement']
             Advertisement.objects.create(name=name, description=description, pub_date=pub_date, advertiser=hoss)
+        if request.POST.get('delete'):
+            nameads=form.cleaned_data.get('advertisement')
+            Advertisement.objects.get(name=nameads).delete()
+        if request.POST.get('update'):
+            Advertisement.objects.filter(name=nameads).update(name=name,description=description,pub_date=pub_date)
         newform = Userinput(None)
         return render(request, 'advertiser/dashboard/forms.html', {'form': newform})
 
