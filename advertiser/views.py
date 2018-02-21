@@ -26,7 +26,10 @@ class DashboardView(View):
     template_name = 'advertiser/dashboard/index.html'
 
     def get(self, request):
-        return render(request, 'advertiser/dashboard/index.html')
+        dash = Advertisement.objects.filter(name="Hossam").count()
+        context = {'dash': dash}
+
+        return render(request, 'advertiser/dashboard/index.html', context)
 
 
 class ContactView(View):
@@ -54,8 +57,9 @@ class ChartsView(View):
     template_name = 'advertiser/dashboard/charts.html'
 
     def get(self, request):
-
-        return render(request, 'advertiser/dashboard/charts.html')
+        stuents = Advertisement.objects.filter(name="Hossam").count()
+        context = {'stuents': stuents}
+        return render(request, 'advertiser/dashboard/charts.html', context)
 
     def post(self, request):
         pass
@@ -179,7 +183,6 @@ class AdvertisementFormView(View):
 
 
     def post(self, request):
-
         form = Userinput(request.POST)
         if form.is_valid():
             if 'username' in request.session:
@@ -196,6 +199,10 @@ class AdvertisementFormView(View):
             nameads=form.cleaned_data.get('advertisement')
             Advertisement.objects.get(name=nameads).delete()
         if request.POST.get('update'):
+            name = form.cleaned_data['name']
+            description = form.cleaned_data['description']
+            pub_date = form.cleaned_data['pub_date']
+            nameads = form.cleaned_data.get('advertisement')
             Advertisement.objects.filter(name=nameads).update(name=name,description=description,pub_date=pub_date)
         newform = Userinput(None)
         return render(request, 'advertiser/dashboard/forms.html', {'form': newform})
@@ -205,3 +212,8 @@ def Student(request):
     stuents = Advertisement.objects.filter(name="Hossam").count()
     context = {'stuents': stuents}
     return render(request, 'advertiser/dashboard/charts.html', context)
+
+def Index(request):
+    stuents = Advertisement.objects.filter(name="Hossam").count()
+    context = {'stuents': stuents}
+    return render(request, 'advertiser/dashboard/index.html', context)

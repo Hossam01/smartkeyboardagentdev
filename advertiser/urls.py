@@ -1,7 +1,7 @@
 from django.conf.urls import url
 
 from advertiser.views import RegistrationFormView, DashboardView, AdvertisementFormView, AdvertisersListView, \
-    LoginFormView, ContactView, HomeView, Student
+    LoginFormView, ContactView, HomeView, Student, ChartsView
 
 app_name = 'advertiser'
 
@@ -13,9 +13,10 @@ urlpatterns = [
     url(r'login/$',LoginFormView.as_view(),name='login'),
     url(r'forms/$', AdvertisementFormView.as_view(), name='forms'),
     # url(r'charts/$', ChartsView.as_view(), name='charts'),
-    url(r'charts/$', Student, name='charts'),
+    url(r'charts/$', ChartsView.as_view(), name='charts'),
     url(r'contact/$', ContactView.as_view(), name='contact'),
     url(r'^$', HomeView.as_view(), name='home'),
+
 
 
 ]
