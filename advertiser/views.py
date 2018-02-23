@@ -3,6 +3,9 @@ from django.contrib.auth.hashers import make_password, check_password
 from django.shortcuts import render, redirect
 from django.views import generic
 from django.views.generic import View
+from django.core.mail import EmailMessage
+from django.core.mail import send_mail
+from django.conf import settings
 
 from api.models import Advertiser
 from .forms import *
@@ -181,7 +184,6 @@ class AdvertisementFormView(View):
         context = {'form': form}
         return render(request, 'advertiser/dashboard/forms.html', context)
 
-
     def post(self, request):
         form = Userinput(request.POST)
         if form.is_valid():
@@ -196,14 +198,14 @@ class AdvertisementFormView(View):
             category = form.cleaned_data.get('category')
             Advertisement.objects.create(name=name, description=description, pub_date=pub_date, advertiser=hoss)
         if request.POST.get('delete'):
-            nameads=form.cleaned_data.get('advertisement')
+            nameads = form.cleaned_data.get('advertisement')
             Advertisement.objects.get(name=nameads).delete()
         if request.POST.get('update'):
             name = form.cleaned_data['name']
             description = form.cleaned_data['description']
             pub_date = form.cleaned_data['pub_date']
             nameads = form.cleaned_data.get('advertisement')
-            Advertisement.objects.filter(name=nameads).update(name=name,description=description,pub_date=pub_date)
+            Advertisement.objects.filter(name=nameads).update(name=name, description=description, pub_date=pub_date)
         newform = Userinput(None)
         return render(request, 'advertiser/dashboard/forms.html', {'form': newform})
 
@@ -213,7 +215,85 @@ def Student(request):
     context = {'stuents': stuents}
     return render(request, 'advertiser/dashboard/charts.html', context)
 
+
 def Index(request):
     stuents = Advertisement.objects.filter(name="Hossam").count()
     context = {'stuents': stuents}
     return render(request, 'advertiser/dashboard/index.html', context)
+
+
+class ResetFormView(View):
+    form_class = EmailForm
+    template_name = 'advertiser/email.html'
+
+    def get(self, request):
+        form = RegistrationForm(None)
+        context = {'form': form}
+        return render(request, 'advertiser/email.html', context)
+
+    def post(self, request):
+        form = EmailForm(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            useremail = EmailMessage("ChangePassword", 'Can you change password by this link  '
+                                                       'http://127.0.0.1:8000/advertiser/Changepassword/', to=[email])
+            useremail.send()
+
+            form = EmailForm(None)
+            return render(request, 'advertiser/email.html',
+                          {'form': form})
+
+
+def advertisement(request):
+    stuents = Advertisement.objects.all()
+    context = {'stuents': stuents}
+    return render(request, 'advertiser/dashboard/update.html', context)
+
+
+def delete(request, part_id):
+    object = Advertisement.objects.get(id=part_id)
+    object.delete()
+    return render(request, 'advertiser/dashboard/Done.html')
+
+
+class UpdateFormView(View):
+    form_class = update
+    template_name = 'advertiser/dashboard/updateData.html'
+
+    def get(self, request,part_id):
+        form = update(None)
+        context = {'form': form}
+        return render(request, 'advertiser/dashboard/updateData.html', context)
+
+    def post(self, request,part_id):
+        form = update(request.POST)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            description = form.cleaned_data['description']
+            pub_date = form.cleaned_data['pub_date']
+            Advertisement.objects.filter(id=part_id).update(name=name, description=description, pub_date=pub_date)
+            newform = update(None)
+            return render(request, 'advertiser/dashboard/updateData.html', {'form': newform})
+
+
+class ChangepasswordFormView(View):
+    form_class = changeForm
+    template_name = 'advertiser/changeEmail.html'
+
+    def get(self, request):
+        form = changeForm(None)
+        context = {'form': form}
+        return render(request, 'advertiser/changeEmail.html', context)
+
+    def post(self, request):
+        form = changeForm(request.POST)
+        if form.is_valid():
+            if Advertiser.objects.filter(email=form.cleaned_data['email']).exists():
+                if form.cleaned_data['password'] == form.cleaned_data['confirmpassword']:
+                    email = form.cleaned_data['email']
+                    password = make_password(form.cleaned_data['password'])
+                    Advertiser.objects.filter(email=email).update(password=password)
+
+            form = changeForm(None)
+            return render(request, 'advertiser/changeEmail.html',
+                          {'form': form})
