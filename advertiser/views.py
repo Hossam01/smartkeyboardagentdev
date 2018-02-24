@@ -197,15 +197,6 @@ class AdvertisementFormView(View):
             min_age = form.cleaned_data['min_age']
             category = form.cleaned_data.get('category')
             Advertisement.objects.create(name=name, description=description, pub_date=pub_date, advertiser=hoss)
-        if request.POST.get('delete'):
-            nameads = form.cleaned_data.get('advertisement')
-            Advertisement.objects.get(name=nameads).delete()
-        if request.POST.get('update'):
-            name = form.cleaned_data['name']
-            description = form.cleaned_data['description']
-            pub_date = form.cleaned_data['pub_date']
-            nameads = form.cleaned_data.get('advertisement')
-            Advertisement.objects.filter(name=nameads).update(name=name, description=description, pub_date=pub_date)
         newform = Userinput(None)
         return render(request, 'advertiser/dashboard/forms.html', {'form': newform})
 

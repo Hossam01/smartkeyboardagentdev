@@ -64,9 +64,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 								<li class="active"><a href="{% url 'advertiser:login' %}">
-                            <i class="lnr lnr-exit"></i> <span>Sign In</span></a>
-								<li class="active"><a href="{% url 'advertiser:registration' %}">
-                            <i class="lnr lnr-user"></i> <span>Sign Up</span></a>s
+                            <i class="lnr lnr-lock"></i> <span>Sign In</span></a>
+
+
+                           <li class="active"><a href="{% url 'advertiser:login' %}">
+                            <i class="lnr lnr-exit"></i> <span> Logout</span></a>
 					</ul>
 				<!--sidebar nav end-->
 			</div>
@@ -108,6 +110,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		<!-- //header-ends -->
 			<div id="page-wrapper">
+
+
 				<div class="graphs">
 					<div class="col_3">
 						<div class="col-md-3 widget widget1">
@@ -171,8 +175,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li>Last Hour Sales: $34 USD</li>
 							</ul>
 						</div>
-					</div>
-					<div class="sparkline">
+                        <div class="sparkline">
 						<canvas id="line" height="150" width="480" style="width: 480px; height: 150px;"></canvas>
                               <script src="{% static 'advertiser/dashboard/js/Chart.js' %}"></script>
 							<script>
@@ -193,6 +196,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</script>
 					</div>
 				</div>
+					</div>
+
 				<div class="col-md-4 switch-right">
 					<div class="switch-right-grid">
 						<div class="switch-right-grid1">
@@ -204,8 +209,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li>Last Hour Sales: $2,434 USD</li>
 							</ul>
 						</div>
-					</div>
-					<div class="sparkline">
+                        <div class="sparkline">
 						<canvas id="bar" height="150" width="480" style="width: 480px; height: 150px;"></canvas>
                           <script src="{% static 'advertiser/dashboard/js/Chart.js' %}"></script>
 							<script >
@@ -229,6 +233,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</script>
 					</div>
 				</div>
+					</div>
+
 				<div class="col-md-4 switch-right">
 					<div class="switch-right-grid">
 						<div class="switch-right-grid1">
@@ -240,8 +246,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li>Last Hour Sales: $75,434 USD</li>
 							</ul>
 						</div>
-					</div>
-					<div class="sparkline">
+                        <div class="sparkline">
 						<!--graph-->
 						<link rel="stylesheet" href="{% static 'advertiser/dashboard/css/graph.css' %}">
 						<script src="{% static 'advertiser/dashboard/js/jquery.flot.min.js' %}"></script>
@@ -314,6 +319,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 					</div>
 				</div>
+					</div>
+
 				<div class="clearfix"></div>
 			</div>
 		</div>

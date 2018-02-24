@@ -124,13 +124,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="tab-pane active" id="horizontal-form">
 							<form class="form-horizontal" action="" method="POST">
 								<div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Advertisement</label>
-									<div class="col-sm-8">
-										{% csrf_token %}
-										{{ form.advertisement }}
-									</div>
-								</div>
-								<div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Summary</label>
 									<div class="col-sm-8">
 										{% csrf_token %}
@@ -180,17 +173,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										{{ form.min_age }}
 									</div>
 								</div>
-								<div class="form-group-btn">
-									<input type="submit" value="Submit" class="btn btn-primary"/>
-									<input type="submit" value="delete" name="delete" class="btn btn-primary"/>
-									<input type="submit" value="update" name="update" class="btn btn-primary"/>
-
-								</div>
-							</form>
-
-							<div class="panel-body panel-body-inputin">
-		<form role="form" class="form-horizontal">
-			<div class="form-group">
+								<div class="form-group">
+							<label for="exampleInputFile">Extra local File</label>
+							<input type="file" id="exampleInputFile">
+										<div class="form-group">
 				<label class="col-md-2 control-label">Email Address</label>
 				<div class="col-md-8">
 					<div class="input-group in-grp1">
@@ -217,29 +203,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 			</div>
-        </form>
+								<div class="form-group-btn col-sm-8 col-sm-offset-2">
+									<input type="submit" value="Submit" class="btn btn-primary"/>
+									<button class="btn-default btn">Cancel</button>
+									<button class="btn-inverse btn">Reset</button>
+								</div>
+							</form>
+
+							<div class="panel-body panel-body-inputin">
+
+
 						</div>
 						<br>
 						<br>
 						<br>
 						<br>
-						  <div class="form-group">
-							<label for="exampleInputFile">Extra local File</label>
-							<input type="file" id="exampleInputFile">
-						  </div>
-
-
 
 						  <div class="panel-footer">
 							<div class="row">
 								<div class="col-sm-8 col-sm-offset-2">
-									<input type="submit" value="Submit" class="btn btn-primary"/>
-									<button class="btn-default btn">Cancel</button>
-									<button class="btn-inverse btn">Reset</button>
+									
 								</div>
 							</div>
 						 </div>
-						</form>
 					  </div>
 				</div>
 			</div>
